@@ -1,3 +1,22 @@
+// Dynamic CSS links
+$('<link/>', {
+	rel: 'stylesheet',
+	type: 'text/css',
+	href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
+}).appendTo('head');
+
+$('<link/>', {
+	rel: 'stylesheet',
+	type: 'text/css',
+	href: 'http://bisschop-software.nl/fenego3/css/style.css'
+}).appendTo('head');
+
+$('<link/>', {
+	rel: 'stylesheet',
+	type: 'text/css',
+	href: 'http://bisschop-software.nl/fenego3/css/jquery.bxslider.css'
+}).appendTo('head');
+
 $(document).ready(function(){
 	var type = 'carousel';
 	var slides = null;
@@ -28,14 +47,7 @@ $(document).ready(function(){
 		$.each(data, function(i, item) {
 			$('#recommendations').append("<li><a href='" + item.url + "' target='_blank'><h3>" + item.title + "</h3><p>" + item.description + "</p><img src='" + item.img + "' /></li></a>");
 		});
-		
-		// CSS link naar FontAwesome
-		$('<link/>', {
-			rel: 'stylesheet',
-			type: 'text/css',
-			href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
-		}).appendTo('head');
-		
+
 		// Init van slider
 		$('#recommendations').bxSlider({
 			controls: true,
