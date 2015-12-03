@@ -1,0 +1,26 @@
+{ "1": {
+    "title": "Laptop 1",
+    "description": "Description for laptop 1",
+    "img": "img/laptop1.jpg"
+  },
+  "2": {
+    "title": "Laptop 2",
+    "description": "Description for laptop 2",
+    "img": "img/laptop2.jpg"
+  },
+  "3": {
+    "title": "Laptop 3",
+    "description": "Description for laptop 3",
+    "img": "img/laptop3.jpg"
+  },
+  "4": {
+    "title": "Laptop 4",
+    "description": "Description for laptop 4",
+    "img": "img/laptop4.jpg"
+  },
+  "5": {
+    "title": "Laptop 5",
+    "description": "Description for laptop 5",
+    "img": "img/laptop5.jpg"
+  }
+}
