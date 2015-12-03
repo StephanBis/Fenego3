@@ -10,7 +10,7 @@
     // 3. Routes configureren
     function moduleConfig($routeProvider) {
         $routeProvider.when('/', {
-            templateUrl: 'views/login.html',
+			templateUrl: 'views/login.html',
             //controller: 'loginController',
             //controllerAs: 'loginCtrl'
         })
