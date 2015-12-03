@@ -1,0 +1,26 @@
+[
+  {
+	"id": 1,
+	"titel": "Soldaat van Oranje",
+	"auteur": "Paul Verhoeven",
+	"jaar": 1977
+  },
+  {
+	"id": 2,
+	"titel": "Ciske de Rat",
+	"auteur": "Guido Pieters",
+	"jaar": 1984
+  },
+  {
+	"id": 3,
+	"titel": "Alleman",
+	"auteur": "Bert Haanstra",
+	"jaar": 1963
+  },
+  {
+	"id": 4,
+	"titel": "Blue Movie",
+	"auteur": "Wim Verstappen",
+	"jaar": 1971
+  }
+]
