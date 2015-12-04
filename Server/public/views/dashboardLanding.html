@@ -1,230 +1,129 @@
 
-    <div id="wrapper">
+     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-				<!-- CUSTOMER NAME-->
-                <a class="navbar-brand" href="index.html">KLANTNAAM</a>
+                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
             </div>
-            <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
                 <li class="dropdown">
-					<li>
-						<a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-					</li>
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href=""><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href=""><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
                     </ul>
+                    <!-- /.dropdown-user -->
                 </li>
+                <!-- /.dropdown -->
             </ul>
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <form action="">
-					<ul class="nav navbar-nav side-nav">
-						<li class="active">
-							<a href="index.html"><i class="fa fa-fw fa-dashboard"></i>Dashboard</a>
-						</li>
-						<li class="divider"></li>
-						
-						<!--CATEGORIES-->
-						<!-- READ FROM DATABASE -->
-						<li>
-							<a href="javascript:;" data-toggle="collapse" data-target="#category1">
-								<input type="checkbox" name="category1" value="category1" > Category 1
-								<i class="fa fa-fw fa-caret-down"></i>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="#dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a>
+								<i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span>
 							</a>
-							<ul id="category1" class="collapse">
-								<li>
-									<a href="#">
-									<input type="checkbox" name="subcategory1" value="subcategory1"> SubCategory 1
-									</a>
-								</li>
-								<li>
-									<a href="#">
-									<input type="checkbox" name="subcategory1" value="subcategory1"> SubCategory 2
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;" data-toggle="collapse" data-target="#category2">
-								<input type="checkbox" name="category2" value="category2"> Category 2
-								<i class="fa fa-fw fa-caret-down"></i>
-							</a>
-							<ul id="category2" class="collapse">
-								<li>
-									<a href="#">
-									<input type="checkbox" name="subcategory1" value="subcategory1"> SubCategory 1
-									</a>
-								</li>
-								<li>
-									<a href="#">
-									<input type="checkbox" name="subcategory1" value="subcategory1"> SubCategory 2
-									</a>
-								</li>
-								<li>
-									<a href="#">
-									<input type="checkbox" name="subcategory1" value="subcategory1"> SubCategory 3
-									</a>
-								</li>
-							</ul>
-						</li>
-						
-					</ul>
-				</form>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a>Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a>Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a>Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a>Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a>Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a>Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a>Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- /.navbar-static-side -->
         </nav>
 
         <div id="page-wrapper">
-            <div class="container-fluid">
-
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Dashboard <small>Overview</small>
-                        </h1>
-                    </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Morris.js Charts</h1>
                 </div>
-                <!-- /.row -->
-
-                <!-- PLACEHOLDER GRAPHS -->
-				  <div class="panel panel-red">
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
-                            <div class="pull-right">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu pull-right" role="menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            Testing examples
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Date</th>
-                                                    <th>Time</th>
-                                                    <th>Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>3326</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:29 PM</td>
-                                                    <td>$321.33</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3325</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:20 PM</td>
-                                                    <td>$234.34</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3324</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:03 PM</td>
-                                                    <td>$724.17</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3323</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:00 PM</td>
-                                                    <td>$23.71</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3322</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:49 PM</td>
-                                                    <td>$8345.23</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3321</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:23 PM</td>
-                                                    <td>$245.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3320</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:15 PM</td>
-                                                    <td>$5663.54</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3319</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:13 PM</td>
-                                                    <td>$943.45</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.table-responsive -->
-                                </div>
-                                <!-- /.col-lg-4 (nested) -->
-                                <div class="col-lg-8">
-                                    <div style="position: relative;" id="morris-bar-chart">
-									<svg style="overflow: hidden; position: relative; top: -0.199951px;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="670" version="1.1" height="392"><desc>Created with Raphaël 2.1.2</desc><defs></defs><text font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="end" y="357" x="36.5" style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">0</tspan></text><path stroke-width="0.5" d="M49,357H645" stroke="#aaaaaa" fill="none" style=""></path><text font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="end" y="274" x="36.5" style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">25</tspan></text><path stroke-width="0.5" d="M49,274H645" stroke="#aaaaaa" fill="none" style=""></path><text font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="end" y="191" x="36.5" style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">50</tspan></text><path stroke-width="0.5" d="M49,191H645" stroke="#aaaaaa" fill="none" style=""></path><text font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="end" y="108" x="36.5" style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">75</tspan></text><path stroke-width="0.5" d="M49,108H645" stroke="#aaaaaa" fill="none" style=""></path><text font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="end" y="25" x="36.5" style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">100</tspan></text><path stroke-width="0.5" d="M49,25H645" stroke="#aaaaaa" fill="none" style=""></path><text transform="matrix(1,0,0,1,0,7.5)" font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="middle" y="369.5" x="602.4285714285714" style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">2012</tspan></text><text transform="matrix(1,0,0,1,0,7.5)" font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="middle" y="369.5" x="517.2857142857142" style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">2011</tspan></text><text transform="matrix(1,0,0,1,0,7.5)" font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="middle" y="369.5" x="432.14285714285717" style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">2010</tspan></text><text transform="matrix(1,0,0,1,0,7.5)" font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="middle" y="369.5" x="347" style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">2009</tspan></text><text transform="matrix(1,0,0,1,0,7.5)" font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="middle" y="369.5" x="261.8571428571429" style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">2008</tspan></text><text transform="matrix(1,0,0,1,0,7.5)" font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="middle" y="369.5" x="176.71428571428572" style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">2007</tspan></text><text transform="matrix(1,0,0,1,0,7.5)" font-weight="normal" fill="#888888" stroke="none" font-size="12px" font-family="sans-serif" text-anchor="middle" y="369.5" x="91.57142857142857" style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"><tspan dy="4.5">2006</tspan></text><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" height="332" width="30.428571428571427" y="25" x="59.64285714285714"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" height="298.8" width="30.428571428571427" y="58.19999999999999" x="93.07142857142857"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" height="249" width="30.428571428571427" y="108" x="144.78571428571428"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" height="215.79999999999998" width="30.428571428571427" y="141.20000000000002" x="178.21428571428572"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" height="166" width="30.428571428571427" y="191" x="229.92857142857142"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" height="132.79999999999998" width="30.428571428571427" y="224.20000000000002" x="263.35714285714283"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" height="249" width="30.428571428571427" y="108" x="315.0714285714286"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" height="215.79999999999998" width="30.428571428571427" y="141.20000000000002" x="348.50000000000006"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" height="166" width="30.428571428571427" y="191" x="400.2142857142857"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" height="132.79999999999998" width="30.428571428571427" y="224.20000000000002" x="433.64285714285717"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" height="249" width="30.428571428571427" y="108" x="485.35714285714283"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" height="215.79999999999998" width="30.428571428571427" y="141.20000000000002" x="518.7857142857142"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#0b62a4" ry="0" rx="0" height="332" width="30.428571428571427" y="25" x="570.5"></rect><rect fill-opacity="1" style="fill-opacity: 1;" stroke="none" fill="#7a92a3" ry="0" rx="0" height="298.8" width="30.428571428571427" y="58.19999999999999" x="603.9285714285714"></rect></svg>
-									<div style="left: 47.0714px; top: 160px; display: none;" class="morris-hover morris-default-style">
-									<div class="morris-hover-row-label">2006</div>
-									<div class="morris-hover-point" style="color: #0b62a4">
-										Series A:100
-									</div>
-									<div class="morris-hover-point" style="color: #7a92a3">
-										Series B:90
-									</div></div></div>
-                                </div>
-                                <!-- /.col-lg-8 (nested) -->
-                            </div>
-                            <!-- /.row -->
+                            <div id="morris-donut-chart"></div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-					<div class="panel panel-yellow">
-						<div class="panel-heading">
-							<i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
-						</div>
-						<div class="panel-body">
-							<div id="morris-donut-chart">
-								<svg style="overflow: hidden; position: relative; top: -0.799805px;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="479" version="1.1" height="397"><desc>Created with Raphaël 2.1.2</desc><defs></defs><path opacity="0" stroke-width="2" d="M239.5,328.3333333333333A127.33333333333333,127.33333333333333,0,0,0,359.61653468415176,243.25867808212578" stroke="#0b62a4" fill="none" style="opacity: 0;"></path><path stroke-width="3" d="M239.5,331.3333333333333A130.33333333333331,130.33333333333331,0,0,0,362.44650539660563,244.2543013877256L414.958184172138,262.72864494718897A186,186,0,0,1,239.5,387Z" stroke="#ffffff" fill="#0b62a4" style=""></path><path opacity="1" stroke-width="2" d="M359.61653468415176,243.25867808212578A127.33333333333333,127.33333333333333,0,0,0,125.26264583744357,144.7540695541764" stroke="#3980b5" fill="none" style="opacity: 1;"></path><path stroke-width="3" d="M362.44650539660563,244.2543013877256A130.33333333333331,130.33333333333331,0,0,0,122.57118984932052,143.42890365362032L68.14396875616535,116.63110433126457A191,191,0,0,1,419.67480202622767,264.38801712318866Z" stroke="#ffffff" fill="#3980b5" style=""></path><path opacity="0" stroke-width="2" d="M125.26264583744357,144.7540695541764A127.33333333333333,127.33333333333333,0,0,0,239.45999705420232,328.33332704968524" stroke="#679dc6" fill="none" style="opacity: 0;"></path><path stroke-width="3" d="M122.57118984932052,143.42890365362032A130.33333333333331,130.33333333333331,0,0,0,239.45905457642175,331.33332690164116L239.44156637760446,386.999990821268A186,186,0,0,1,72.62972873637045,118.83971416552465Z" stroke="#ffffff" fill="#679dc6" style=""></path><text stroke-width="0.4493891797556719" transform="matrix(2.2252,0,0,2.2252,-294.0583,-245.0485)" font-weight="800" fill="#000000" stroke="none" font-size="15px" font-family="&quot;Arial&quot;" text-anchor="middle" y="191" x="239.5" style="text-anchor: middle; font-family: &quot;Arial&quot;; font-size: 15px; font-weight: 800;"><tspan dy="5">In-Store Sales</tspan></text><text stroke-width="0.3769633507853403" transform="matrix(2.6528,0,0,2.6528,-396.6667,-335.5139)" fill="#000000" stroke="none" font-size="14px" font-family="&quot;Arial&quot;" text-anchor="middle" y="211" x="239.5" style="text-anchor: middle; font-family: &quot;Arial&quot;; font-size: 14px;"><tspan dy="5">30</tspan></text></svg>
-							</div>
-						</div>
-						<!-- /.panel-body -->
-					</div>
-					<!-- /.panel -->
-				
+                </div>
+                <!-- /.col-lg-6 -->
             </div>
-            <!-- /.container-fluid -->
-
+            <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
 
     </div>
     <!-- /#wrapper -->
+	
+	
+	<!-- Morris Charts JavaScript -->
+    <script src="./js/plugins/morris/raphael-min.js"></script>
+    <script src="./js/plugins/morris/morris.min.js"></script>
+    <script src="./js/plugins/morris/morris-data.js"></script>

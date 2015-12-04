@@ -19,6 +19,16 @@
                 //controller: 'loginController',
                 //controllerAs: 'loginCtrl'
             })
+			.when('/customerSelection', {
+                templateUrl: 'views/customerSelection.html',
+                //controller: 'customerSelectionController',
+                //controllerAs: 'customerSelectionCtrl'
+            })
+			.when('/dashboard', {
+                templateUrl: 'views/dashboardLanding.html',
+                //controller: 'dashboardController',
+                //controllerAs: 'dashboardCtrl'
+            })
             .otherwise({
 				//temporary
                 redirectTo: '/'
